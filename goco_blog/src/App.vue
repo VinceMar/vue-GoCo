@@ -1,31 +1,52 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<div id="app">
+    <Navbar></Navbar>
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-8">
+                <transition name="fade" mode="out-in">
+                    <router-view></router-view>
+                </transition>
+            </div>
+            <div class="col-md-4">
+                <Sidebar></Sidebar>
+            </div>
+        </div>
     </div>
-    <router-view />
-  </div>
+</div>
 </template>
 
+<script>
+// @ is an alias to /src
+import Navbar from "@/components/Navbar.vue";
+import Sidebar from "@/components/Sidebar.vue";
+export default {
+    components: {
+        Navbar,
+        Sidebar
+    }
+};
+</script>
+
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+.main {
+    padding: 20px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.fade-enter {
+    opacity: 0;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-enter-active {
+    transition: opacity .3s;
+}
+
+.fade-leave-active {
+    opacity: 0;
+    transition: opacity .3s;
 }
 </style>
