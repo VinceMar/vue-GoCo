@@ -1,10 +1,19 @@
 <template>
     <nav class="navbar navbar-expand-sm bg-dark">
       <img class="navbar-brand" src="../assets/logo.png" width="40px">
-      <h2 class="title">我的Vue-cli小站</h2>
+      <h2 class="title">My Project</h2>
       <ul class="navbar-nav">
         <li class="nav-item">
           <router-link class="nav-link" to="/">首页</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/technews">科技</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/funnews">娱乐</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/sportsnews">体育</router-link>
         </li>
         <li class="nav-item">
           <router-link class="nav-link" to="/about">关于</router-link>
@@ -12,12 +21,6 @@
       </ul>
  </nav>
 </template>
-
-<script>
-export default {
-    name:'Navbar'
-}
-</script>
 
 <style scope>
 
