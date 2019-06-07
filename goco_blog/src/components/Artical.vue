@@ -91,7 +91,6 @@ export default {
   width: 30px;
   height: 30px;
   background-color: #67CF22;
- 
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
