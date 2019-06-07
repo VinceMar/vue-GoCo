@@ -1,4 +1,4 @@
-# goco_blog
+# 网罗头条Ver 1.0
 
 ## Project setup
 ```
