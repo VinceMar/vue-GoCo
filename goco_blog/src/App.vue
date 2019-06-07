@@ -1,7 +1,7 @@
 <template>
 <div id="app">
     <Navbar></Navbar>
-    <div class="container main">
+    <div class="container-fluid main">
         <div class="row">
             <div class="col-md-8">
                 <transition name="fade" mode="out-in">

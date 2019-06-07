@@ -1,9 +1,10 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
-import Fun from "./views/FunNews.vue"
-import Tech from "./views/TechNews.vue"
-import Sport from './views/SportsNews.vue'
+import Fun from "./views/FunNews.vue";
+import Tech from "./views/TechNews.vue";
+import Sport from './views/SportsNews.vue';
+import Business from './views/Business.vue';
 Vue.use(Router);
 
 export default new Router({
@@ -35,6 +36,11 @@ export default new Router({
       path:"/sportsnews",
       name:'sport',
       component:Sport
+    },
+    {
+      path:"/business",
+      name:'business',
+      component:Business
     }
   ]
 });
